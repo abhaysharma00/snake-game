@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: url("space.jpg");
+    background-size: cover;
+    /* box-sizing: border-box; */
+    color: white;
+}
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+
+}
+.body{
+    display: grid;
+    place-items: center;
+}
+.body > .header{
+margin-left: 200px;
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(25,1fr);
+    grid-template-rows: repeat(25,1fr);
+    /* row-gap: 1px;
+    column-gap: 1px; */
+    background-color: black; 
+    /* height: 40vw;
+    width: 40vw; */
+    min-width: 500px;
+    min-height: 500px;
+    
+    border: 10px solid white;
+}
+.snake{
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 5px;
+
+}
+.food
+{
+    /* border: 1px solid white; */
+    /* background-color: red; */
+    border-radius: 10px;
+    background-color:floralwhite;
+    background-image: url(/food.jpg);
+}
+.header{
+    color:white;
+}
+.center{
+    padding: 10vw;
+    font-size: 2vw;
+}
+.leftsidebar > button{
+    font-size: 3vmin;
+    height: 4vh;
+    width: 6vw;
+    background-color: black;
+    border: none;
+}
